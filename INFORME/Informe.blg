@@ -1,0 +1,21 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Informe.aux
+The style file: agsm.bst
+Database file #1: references.bib
+I was expecting a `,' or a `}'---line 37 of file references.bib
+ : 
+ : @Article{DR2,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Illegal end of database file---line 427 of file references.bib
+ : 
+ : 
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "R"
+Warning--can't use both author and editor fields in Diseno2
+Warning--empty publisher in Diseno2
+Warning--can't use both author and editor fields in Diseno
+Warning--empty publisher in Diseno
+Warning--can't use both author and editor fields in Diseno3
+Warning--empty publisher in Diseno3
+(There were 2 error messages)
