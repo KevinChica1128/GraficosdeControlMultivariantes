@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  24 MAY 2019 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  3 JUL 2019 14:29
 entering extended mode
 **./Presentación.tex
 (Presentación.tex
@@ -784,10 +784,6 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\newline' on input line 12.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\newline' on input line 12.
-
 (Presentación.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
@@ -1265,8 +1261,8 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  18538 strings out of 492946
- 351638 string characters out of 3135510
- 445569 words of memory out of 3000000
+ 351694 string characters out of 3135510
+ 445480 words of memory out of 3000000
  21900 multiletter control sequences out of 15000+200000
  15400 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1283,7 +1279,7 @@ x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Presentación.pdf (51 pages, 251849 bytes).
+Output written on Presentación.pdf (51 pages, 252538 bytes).
 PDF statistics:
  420 PDF objects out of 1000 (max. 8388607)
  104 named destinations out of 1000 (max. 500000)
