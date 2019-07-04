@@ -46,8 +46,33 @@ Los métodos de muestreo tipo aceptación y rechazo juegan un papel sumamente impo
 
 
 \section{Antecedentes}
+Para estudiar un poco cómo funcionan y en qué contextos se han aplicado los gráficos de control multivariantes se estudiaron tres artículos, el primero \textbf{Aplicación del control estadístico multivariado para medir la capacidad del proceso de fabricación de resortes de compresión en acero inoxidable} escrito por \textbf{\citeasnoun{A1}} donde se ESCRIBIR ; el segundo artículo \textbf{Desarrollo de una aplicación para gráficos de control de procesos industriales} escrito por \textbf{\citeasnoun{A2}} el cual muestra ESCRIBIR y por último, \textbf{\citeasnoun{A3}} en su artículo \textbf{Gráficos de control no paramétricos basados en R estadísticos con aplicación al caso multivariante} exponen un estudio realizado sobre 
 
 \section{Descripción metodología de aplicación}
+Las gráficas de control multivariadas son un tipo de gráfica de control de variables que muestra cómo las variables correlacionadas o dependientes influyen en forma conjunta en un proceso o resultado. Por ejemplo, puede utilizar una gráfica de control multivariada para investigar si la temperatura y la presión se encuentran bajo control en la producción de piezas plásticas moldeadas por inyección.
+
+Si los datos incluyen variables correlacionadas, entonces crear gráficas de control separadas para cada variable podría conducir a una interpretación errónea, debido a que las variables en conjunto afectan el proceso. Si usted utiliza gráficas de control univariadas separadas en una situación multivariada, el error de tipo I y la probabilidad de que un punto caiga correctamente dentro de los límites de control no es igual a sus valores esperados. La distorsión de estos valores aumenta con el número de variables de medición.
+
+Sin embargo, las gráficas de control multivariadas son más difíciles de interpretar que las gráficas de control clásicas de Shewhart. Por ejemplo, la escala de las gráficas de control multivariadas no está relacionada con la escala de ninguna de las variables. Además, las señales de fuera de control en gráficas de control multivariadas no revelan cuál variable (o combinación de variables) causó la señal.
+
+Los gráficos de control multivariantes más utilizados y los cuales se tratarán en este artículo son
+\begin{itemize}
+\item Gráfico de control elipsoide o control $\chi^2$
+\item Gráfico $T^2$ o de Hotelling
+\item Gráfico multivariante de promedios ponderados exponencialmente (MEWMA)
+\item Gráfico multivariante de suma acumulativa (MCUSUM)
+\item Gráfico basado en Análisis de Componentes Principales (PCA)
+\end{itemize}
+
+\subsection{Gráfico $\chi^2$}
+
+\subsection{Gráfico $T^2$}
+
+\subsection{Gráfico multivariante de promedios ponderados exponencialmente MEWMA}
+
+\subsection{Gráfico multivariante de suma acumulativa MCUSUM}
+
+\subsection{Gráfico basado en Análisis de Componentes Principales  PCA}
 
 \section{Caso ilustrativo}
 
@@ -55,7 +80,7 @@ Los métodos de muestreo tipo aceptación y rechazo juegan un papel sumamente impo
 
     \bibliography{references}
 
-\nocite{ControlR}
+
     \appendix% !don't modify this line¡
 
 \section{Curvas de operación}

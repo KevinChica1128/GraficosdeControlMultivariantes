@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  4 JUL 2019 09:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  4 JUL 2019 15:48
 entering extended mode
 **"./Informe calidad.tex"
 ("Informe calidad.tex"
@@ -447,56 +447,67 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 14.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+) [1
+
+{C:/Users/KEVINSTEVEN/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 60.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-No file "Informe calidad".bbl.
-
-LaTeX Warning: Citation 'ControlR' on page 1 undefined on input line 58.
-
-<FigurasUV/CO1.pdf, id=1, 1027.84pt x 545.03625pt>
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 60.
+ ("Informe calidad.bbl")
+<FigurasUV/CO1.pdf, id=18, 1027.84pt x 545.03625pt>
 File: FigurasUV/CO1.pdf Graphic file (type pdf)
 <use FigurasUV/CO1.pdf>
-Package pdftex.def Info: FigurasUV/CO1.pdf  used on input line 64.
+Package pdftex.def Info: FigurasUV/CO1.pdf  used on input line 89.
 (pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
 
-Overfull \hbox (32.5191pt too wide) in paragraph at lines 64--65
+Overfull \hbox (32.5191pt too wide) in paragraph at lines 89--90
  [][] 
  []
 
+[2] [3 <./FigurasUV/CO1.pdf>] ("Informe calidad.aux")
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-[1
-
-{C:/Users/KEVINSTEVEN/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-[2 <./FigurasUV/CO1.pdf>] ("Informe calidad.aux") ) 
+ ) 
 Here is how much of TeX's memory you used:
- 5557 strings out of 492946
- 78842 string characters out of 3135510
- 163130 words of memory out of 3000000
- 9324 multiletter control sequences out of 15000+200000
- 19564 words of font info for 58 fonts, out of 3000000 for 9000
+ 5609 strings out of 492946
+ 79592 string characters out of 3135510
+ 164297 words of memory out of 3000000
+ 9365 multiletter control sequences out of 15000+200000
+ 24127 words of font info for 69 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,8n,40p,1088b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\KEVINSTEVEN\AppDa
-ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc0900.pk> <C:\Users\K
-EVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000
+ <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/d
+pi600\eccc0900.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfo
+ur/jknappen/ec/dpi600\ecti0900.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2
+.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\KEVINSTEVEN\AppDat
+a\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\KE
+VINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.
+pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/
+dpi600\ecrm0600.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljf
+our/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\
+2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\KEVINSTEVEN\AppDa
+ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc0800.pk> <C:\Users\K
+EVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700
 .pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecrm0800.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/lj
-four/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX
-\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\KEVINSTEVEN\AppD
-ata\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc0800.pk> <C:\Users\
-KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm070
-0.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/e
-c/dpi600\eccc1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/l
-jfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTe
-X\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\KEVINSTEVEN\App
-Data\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on "Informe calidad.pdf" (2 pages, 95626 bytes).
+/dpi600\eccc1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/lj
+four/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX
+\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\KEVINSTEVEN\AppD
+ata\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb>
+Output written on "Informe calidad.pdf" (3 pages, 190752 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
+ 469 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
