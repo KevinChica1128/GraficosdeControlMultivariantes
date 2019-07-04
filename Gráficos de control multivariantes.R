@@ -31,6 +31,37 @@ ch <- cbind(sqrt(qchisq(1 - alpha,2)) * cos(angle), sqrt(qchisq(1 - alpha,2)) *
                 sin(angle))
 lines(t(Xmv - ((Ue %*% diag(sqrt(DDe))) %*% t(ch))),type = "l")
 points(dowel1)
+data("dowel2")
+points(dowel2,pch =4)
 
 #Usando la función mult.chart
 mult.chart(dowel1,type="chi",alpha=0.05)
+
+#Caso ilustrativo: Control de pitcheo
+data("sabathia1")
+
+#Vector de medias y matriz de varianzas y covarianzas y correlaciones
+colMeans(sabathia1); covariance(sabathia1); cor(sabathia1)
+
+#Gráfico por pares de variables
+pairs(sabathia1,pch=19)
+
+#Gráfica 3D
+library(rgl)
+plot3d(ellipse3d(cov(sabathia1), centre = colMeans(sabathia1), level = 0.99),
+         xlab = "", ylab = "", zlab = "",type = "wire", col = "gray1", alpha = 0.2)
+points3d(sabathia1, size = 4, cex = 2, add = TRUE)
+
+#Gráfico T2 de Hotelling
+mult.chart(type = "t2", sabathia1)
+
+colm <- nrow(sabathia1)
+vec <- (mult.chart(sabathia1,type = "t2")$Xmv)
+mat <- (mult.chart(sabathia1,type = "t2")$covariance)
+
+#Se cargan otros datos
+data("sabathia2")
+par(mfrow = c(1,2))
+mult.chart(type = "t2", sabathia2, Xmv = vec, S = mat, colm = colm)
+
+
