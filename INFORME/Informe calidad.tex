@@ -1,0 +1,71 @@
+%% -------------------------------------------------------------------------------------
+% This is a general template file for preparing an article for Revista Colombiana de Estadística
+% *************************************************************************************
+\documentclass[english]{revcoles}
+\usepackage[top=3cm,,bottom=3cm]{geometry}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+%
+\hyphenation{}
+% //// --------------------------------------------------------------------------------
+\begin{document}
+
+\title[maintitle = Gr\'{a}ficos de Control Multivariantes,
+]
+
+\begin{authors}
+\author[firstname = Kevin,
+        surname = García,
+        numberinstitution = 1,
+        code= 1533173,
+        affiliation = Universidad del Valle,
+        email = kevin.chica@correounivalle.edu.co]
+\author[firstname = Alejandro,
+        surname = Vargas,
+        numberinstitution = 1,
+        code= 1525953,
+        affiliation = Universidad del Valle,
+        email = jose.alejandro.vargas@correounivalle.edu.co]
+\end{authors}
+%
+\begin{institutions}
+     \institute[subdivision = Departamento de estadística,
+                institution = Universidad del Valle,
+                city = Cali,
+                country = Colombia]
+\end{institutions}
+
+\begin{secondaryabstract}
+Los métodos de muestreo tipo aceptación y rechazo juegan un papel sumamente importante en el área de control de calidad, de aquí que día a día se desarrollen nuevas técnicas que optimicen los procesos de calidad. En el siguiente artículo se verán replicadas las propuestas de Squeglia en cuanto a cómo trabajar con un método en el que se impone como requisito de aceptación cero defectuosos en la muestra. Se realizaron comparaciones entre los métodos tradicionalmente utilizados, con el método c=0; para estas comparaciones se utilizaron curvas características de operaciones, valores de AOQL, probabilidades de aceptación, y todo esto en contraste con diferentes tamaños de muestra, donde observamos que el método propuesto en comparación con el método MIL-STD-105E/ANSI Z1.4 protegen aún más al consumidor, siendo este método mas estricto  a la hora de aceptar lotes con cantidades ``grandes'' de defectuosos. El método por otra parte ``castiga'' al productor, ya que si este no tiene una calidad cercana al 100\%, tiende a rechazar muchos más lotes.
+
+
+
+\end{secondaryabstract}
+
+\section{Introducción}
+
+
+\section{Antecedentes}
+
+\section{Descripción metodología de aplicación}
+
+\section{Caso ilustrativo}
+
+\section{Conclusiones}
+
+    \bibliography{references}
+
+\nocite{ControlR}
+    \appendix% !don't modify this line¡
+
+\section{Curvas de operación}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.45]{FigurasUV/CO1.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 2 - 8}
+\end{figure}
+
+
+
+\end{document}
+

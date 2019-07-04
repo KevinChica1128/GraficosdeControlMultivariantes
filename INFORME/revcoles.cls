@@ -30,11 +30,6 @@
 
 \RequirePackage[T1]{fontenc}                        % fuente utilizada para incorporar simbolos acentuados y otros símbolos
 \RequirePackage{amsmath,amsthm,amssymb,latexsym}    % herramientas para manejo matemático y símbolos matemáticos especiales
-             
-\RequirePackage{verbatim}                           % herramienta para incluir texto en fuente mono-espaciada y para comentarios
-\RequirePackage{enumerate}                          % herramienta para el manejo de listas enumeradas y encajadas
-\RequirePackage{array}                              % utilizado para darle formato al encabezado de las tablas
-\RequirePackage{multicol}
 \RequirePackage{ifpdf}
 \ifpdf
     \RequirePackage{graphicx,color}%                % herramientas para inclusión de gráficos y el manejo del color
@@ -44,9 +39,16 @@
     \DeclareGraphicsExtensions{.eps}
 \fi
 
+\RequirePackage{verbatim}                           % herramienta para incluir texto en fuente mono-espaciada y para comentarios
+\RequirePackage{enumerate}                          % herramienta para el manejo de listas enumeradas y encajadas
+\RequirePackage{array}                              % utilizado para darle formato al encabezado de las tablas
+\RequirePackage{multicol}
+\RequirePackage{multirow, array}
+
+
+
 \def\BibTeX{B{\footnotesize IB}\TeX}            % para agregar la palabra BibTeX en estilo LaTeX
 \def\MiKTeX{M{\footnotesize iK}\TeX}            % para agregar la palabra MikTeX en estilo LaTeX
-\def\pdfLaTeX{\textsf{pdf}\LaTeX}               % para agregar la palabra pdfLaTeX en estilo LaTeX
 \def\emphred#1{{\color{red}#1}}                 % para resaltar texto dudoso a corregir
 
 \definecolor{lightgray}{gray}{0.5}
@@ -78,7 +80,6 @@
 \def\@symposiumname{}
 \def\@symposiumnumber{}
 \def\@symposiumcity{}
-\def\@symposiumcountry{}
 \def\@symposiumdate{}
 \def\@labelproject{}
 \def\@labelUniversity{}
@@ -87,7 +88,6 @@
 \def\@labelProgram{}
 \def\@labelSubject{}
 \def\@labelCity{Bogotá}
-\def\@labelProject{}
 \newcounter{@symposium}
 \newcounter{@instnumber}
 \newcounter{@inst}
@@ -131,7 +131,7 @@
 \def\@exams{Ejemplos}
 \def\@exer{Ejercicio}
 \def\@exers{Ejercicios}
-\def\@note{Nota}
+\def\@note{Note}
 \def\@nota{Notación}
 \def\@obse{Observación}
 \def\@cond{Condición}
@@ -153,6 +153,7 @@
     \newtheorem{nota}{\@nota}%
     \newtheorem{obse}{\@obse}%
     \newtheorem{cond}{\@cond}%
+
 
 \newcommand\@ptsize{}
 \newif\if@restonecol
@@ -186,6 +187,7 @@
     \setlength\evensidemargin{-4.5mm}
     \setlength\voffset{-5.4mm}
 }
+
 
 \if@compatibility
   \renewcommand\@ptsize{0}
@@ -227,8 +229,6 @@
 %\if@compatibility\else
 \DeclareOption{spanish}{
     \@languagespanishtrue
-    \@languageenglishfalse
-    \@languageportuguesefalse
     \def\principalabstractname{Resumen}
     \def\secondaryabstractname{Abstract}
     \def\principalkeywordsname{Palabras clave}
@@ -251,9 +251,7 @@
     \def\@appendix{Apéndice}
 }
 \DeclareOption{english}{
-    \@languagespanishfalse
     \@languageenglishtrue
-    \@languageportuguesefalse
     \def\principalabstractname{Abstract}
     \def\secondaryabstractname{Resumen}
     \def\principalkeywordsname{Key words}
@@ -261,15 +259,14 @@
     \def\@prop{Proposition}
     \def\@teor{Theorem}
     \def\@coro{Corollary}
-    \def\@lema{Lema}
+    \def\@lema{Lemma}
     \def\@defi{Definition}
     \def\@exam{Example}
     \def\@exer{Exercise}
+    \def\@note{\bf{\emph{Note}}}
     \def\@appendix{Appendix}
 }
 \DeclareOption{portuguese}{
-    \@languagespanishfalse
-    \@languageenglishfalse
     \@languageportuguesetrue
     \def\principalabstractname{Resumo}
     \def\secondaryabstractname{Abstract}
@@ -315,7 +312,7 @@
 
 \if@languageenglish
     \usepackage[english]{babel}
-    \def\@seccntformat#1{\csname the#1\endcsname\space}
+    \def\@seccntformat#1{\csname the#1\endcsname.\space}
     \addto\captionsenglish{
         \def\proofname{\bf{\emph{Proof}}}
     }
@@ -342,18 +339,10 @@
 \fi
 \fi
 
-
-
 \def\appendix{\par
     \setcounter{section}{0}%
     \setcounter{subsection}{0}%
-    \if@languagespanish
-    	\def\thesection {\@appendix\ \@Alph\c@section}
-    	\def\thesubsection   {\@Alph\c@section.\@arabic\c@subsection}
-	\else
-    	\def\thesection {\@appendix\ \@Alph\c@section.}
-   		\def\thesubsection   {\@Alph\c@section.\@arabic\c@subsection.}
-	\fi
+    \def\thesection{\@appendix\ \@Alph\c@section}
 }
 
 
@@ -378,7 +367,6 @@
 \define@key{values}{symposiumname}{\def\@symposiumname{#1}}
 \define@key{values}{symposiumnumber}{\setcounter{@symposium}{#1}\def\@symposiumnumber{\Roman{@symposium}}}%
 \define@key{values}{symposiumcity}{\def\@symposiumcity{#1}}
-\define@key{values}{symposiumcountry}{\def\@symposiumcountry{#1}}
 \define@key{values}{symposiumdate}{\def\@symposiumdate{#1}}
 \define@key{values}{label}{\def\@labelProject{\\#1}}
 \define@key{values}{university}{\def\@labelUniversity{#1\\}}
@@ -469,12 +457,12 @@
 \if@project
     \ifnum\value{@author} = 1%
         \mbox{\@firstname\ \@surname}\nolinebreak\unskip\footnote{\@affiliation \@email}\\%
-        {\small \if@languagespanish Autor \else Author \fi}\\
+        {\small Autor}\\
         \xdef\@names{\@firstname\ \@surname}%
         \xdef\@namesaux{\@firstname\ \@surname}%
     \else%
         \mbox{\@firstname\ \@surname}\nolinebreak\unskip\footnote{\@affiliation \@email}\\%
-        {\small \if@languagespanish Director \else Advisor \fi}
+        {\small Director}
     \fi%
     \stepcounter{@author}%
 \else
@@ -608,33 +596,33 @@
 \vspace*{-14mm}%
 \begin{flushright}
     \small%
-    \textbf{Revista Colombiana de Estadística}\\[1pt]
-    Edición para autor(es)\\[-9pt]
-    {\color{lightgray}\underline{\mbox{\hphantom{Edición para autor(es)}}}}
+    \textbf{Control Estadístico de Calidad}\\[1pt]
+    Cali - Julio 04 de 2019\\[-9pt]
+    {\color{lightgray}\underline{\mbox{\hphantom{Cali - Julio 04 de 2019}}}}
 \end{flushright}\vspace{8mm}
-    \def\footmark{Revista Colombiana de Estadística, Edición para autor(es)}
+    \def\footmark{Control Estadístico de Calidad}
 }
 
 \def\labelreferees{
 \vspace*{-14mm}%
 \begin{flushright}
     \small%
-    \textbf{Revista Colombiana de Estadística}\\[1pt]
-    Edición para arbitraje\\[-9pt]
-    {\color{lightgray}\underline{\mbox{\hphantom{Edición para arbitraje}}}}
+    \textbf{Simposio Internacional de Estadística}\\[1pt]
+    Barranquilla - Julio 15-19 de 2019\\[-9pt]
+    {\color{lightgray}\underline{\mbox{\hphantom{Barranquilla - Julio 15-19 de 2019}}}}
 \end{flushright}\vspace{8mm}
-    \def\footmark{Revista Colombiana de Estadística, edición para arbitraje}
+    \def\footmark{XXX Simposio Internacional de Estadística, Barranquilla}
 }
 
 \def\labeledition{
 \vspace*{-14mm}%
 \begin{flushright}
     \small%
-    \textbf{Revista Colombiana de Estadística}\\[1pt]
+    \textbf{Simposio Internacional de Estadística}\\[1pt]
     Artículo en edición, pp.\ \@firstpage\ a \pageref{@lastpage}.\ \@year\\[-9pt]
     {\color{lightgray}\underline{\mbox{\hphantom{Artículo en edición, pp.\ \@firstpage\ a \pageref{@lastpage}.\ \@year}}}}
 \end{flushright}\vspace{8mm}
-\def\footmark{Revista Colombiana de Estadística. En edición (\@year) \@firstpage--\pageref{@lastpage}}
+\def\footmark{Simposio Internacional de Estadística. En edición (\@year) \@firstpage--\pageref{@lastpage}}
 }
 
 \def\labelpublication{
@@ -653,8 +641,8 @@
 \begin{flushright}
     \small%
     \textbf{\@symposiumnumber\ Simposio Colombiano de Estadística \\ \bf{\@symposiumname}}\\[1pt]
-    \@symposiumcity, \@symposiumcountry, \@symposiumdate\ de\ \@year\\[-9pt]
-    {\color{lightgray}\underline{\mbox{\hphantom{\@symposiumcity, \@symposiumcountry, \@symposiumdate\ de\ \@year}}}}
+    \@symposiumcity, \@symposiumdate\ de\ \@year\\[-9pt]
+    {\color{lightgray}\underline{\mbox{\hphantom{\@symposiumcity, \@symposiumdate\ de\ \@year}}}}
 \end{flushright}\vspace{8mm}
     \def\footmark{\@symposiumnumber\ Simposio de Estadística (\@year)}
 }
@@ -677,7 +665,7 @@
     \small%
     \textbf{\@labelUniversity\@labelFaculty\@labelDepartment\@labelProgram\@labelSubject}\\[1pt]
     \@labelCity,\ \month\ de \@year\\[-9pt]
-    {\color{lightgray}\underline{\mbox{\hphantom{Bogotá, \month\ de \@year}}}}
+    {\color{lightgray}\underline{\mbox{\hphantom{\@labelCity, \month\ de \@year}}}}
 \end{flushright}\vspace{8mm}
     \def\footmark{\@labelSubject\ (\@year)}
 }
@@ -1026,4 +1014,3 @@ edition
 publication
 symposium
 project
-
