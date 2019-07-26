@@ -2,7 +2,7 @@
 % This is a general template file for preparing an article for Revista Colombiana de Estadística
 % *************************************************************************************
 \documentclass[english]{revcoles}
-\usepackage[top=3cm,,bottom=3cm]{geometry}
+\usepackage[top=1.5cm,bottom=1.5cm,left=3cm,right=3cm]{geometry}
 \usepackage[latin1]{inputenc}
 \usepackage{graphicx}
 %
@@ -36,7 +36,7 @@
 \end{institutions}
 
 \begin{secondaryabstract}
-Los métodos de muestreo tipo aceptación y rechazo juegan un papel sumamente importante en el área de control de calidad, de aquí que día a día se desarrollen nuevas técnicas que optimicen los procesos de calidad. En el siguiente artículo se verán replicadas las propuestas de Squeglia en cuanto a cómo trabajar con un método en el que se impone como requisito de aceptación cero defectuosos en la muestra. Se realizaron comparaciones entre los métodos tradicionalmente utilizados, con el método c=0; para estas comparaciones se utilizaron curvas características de operaciones, valores de AOQL, probabilidades de aceptación, y todo esto en contraste con diferentes tamaños de muestra, donde observamos que el método propuesto en comparación con el método MIL-STD-105E/ANSI Z1.4 protegen aún más al consumidor, siendo este método mas estricto  a la hora de aceptar lotes con cantidades ``grandes'' de defectuosos. El método por otra parte ``castiga'' al productor, ya que si este no tiene una calidad cercana al 100\%, tiende a rechazar muchos más lotes.
+El control de procesos multivariado es una de las secciones de desarrollo de control estadístico de más rápido desarrollo. Hoy en día, en la industria, hay muchas situaciones en las que es necesario el monitoreo o control simultáneo de dos o más características relacionadas con la calidad del proceso. Los problemas de monitoreo de procesos en los que varias variables relacionadas son de interés se conocen colectivamente como Control Estadístico Multivariante(MSPC). En este documento veremos la descripción y aplicación de los gráficos de control multivariados más utilizados en la práctica, por medio de los cuales se quiere conocer si un proceso está bajo control o si, por el contrario, éste se encuentra fuera de control y así, poder centrarse en qué punto el proceso se salió de control, y cuál o cuáles de las variables fueron las causantes de este inconveniente, para corregir el problema de una manera eficiente y continuar satisfactoriamente con el proceso.
 
 
 
@@ -70,23 +70,26 @@ $$\pm c\sqrt{\lambda_j}e_j$$
 
 siendo 
 $$(x-\mu)'\Sigma^{-1}(x-\mu)=c^2$$
-Si x se distribuye $N_{p}(\mu,\Sigma)$, entonces $(x-\mu)'\Sigma^{-1}(x-\mu)$ es $\chi^2_{\alpha,p}$. Por lo tanto,
+Si x se distribuye $N_{p}(\mu,\Sigma)$, entonces $(x-\mu)'\Sigma^{-1}(x-\mu)$ es $\chi^2_{\alpha,p}$
+
+Por lo tanto,
+
 $$(x-\mu)'\Sigma^{-1}(x-\mu)\leq \chi^2_{\alpha,p}$$
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.3]{FigurasUV/GC.pdf}
+  \includegraphics[scale=0.4]{FigurasUV/GC.pdf}
   \caption{Ejemplo gráfico de contorno}
 \end{figure}
 
+\pagebreak
 Al no obtener puntos fuera de la elipse, no hay evidencia de causas especiales; por lo tanto el proceso está en control. La dificultad para identificar los puntos más allá del elipsoide de confianza es uno de los principales inconvenientes de la herramienta. Otra desventaja es la complejidad para construir el elipsoide cuando $p> 2$, que se puede resolver utilizando el gráfico de control $\chi^2$ que se obtiene al trazar las estadísticas de la prueba:
 $$n(x-\mu)'(\Sigma)^{-1}(x-\mu)= \chi^2_{\alpha,p}$$
 Donde n es el tamaño de muestra y el límite de control superior:
 $$UCL=\chi^2_{\alpha,p}$$
-
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.3]{FigurasUV/GChi2.pdf}
+  \includegraphics[scale=0.4]{FigurasUV/GChi2.pdf}
   \caption{Ejemplo gráfico de control $\chi^2$}
 \end{figure}
 
@@ -107,7 +110,7 @@ Este gráfico se emplea en estudios multivariados introductorios y tiene un buen 
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.3]{FigurasUV/GT2.pdf}
+  \includegraphics[scale=0.4]{FigurasUV/GT2.pdf}
   \caption{Ejemplo gráfico de control $T^2$ de Hotelling}
 \end{figure}
 \subsection{Gráfico de control de varianza generalizada}
@@ -116,26 +119,32 @@ De la misma manera que en el gráfico de control univariado, el monitor de la med
 Hasta la fecha, se han propuesto varios métodos para el monitoreo simultáneo de la variabilidad, pero claramente el gráfico de varianza generalizada es el más aceptado. El término varianza generalizada se conoce como el determinante de la matriz de covarianza.
 
 Este tipo de gráfico resulta al trazar el determinante de la matriz de covarianza junto con los límites de control superior e inferior naturales. Cuando se conoce la matriz de covarianza S, los parámetros del gráfico dan como resultado
-$$UCL=|\Sigma|(b_1 + 3b_2^{1/2})$$
-$$CL=b_1|\Sigma|$$
-$$LCL=max\left\lbrace|\Sigma|(b_1 -3b_2^{1/2}), 0\right\rbrace$$
+\begin{center}
+$UCL=|\Sigma|(b_1 + 3b_2^{1/2})\;\;\;\;\; ;$
+$\;\;\;\;\; CL=b_1|\Sigma|\;\;\;\;\; ;$
+$\;\;\;\;\; LCL=max\left\lbrace|\Sigma|(b_1 -3b_2^{1/2}), 0\right\rbrace$
+\end{center}
 Donde
-$$b_1=\frac{1}{(n-1)^p}\prod\limits_{j=1}^{p}(n-j)$$
-$$b_2=\frac{1}{(n-1)^{2p}}\prod\limits_{j=1}^{p}(n-j)\left[\prod\limits_{i=1}^{p}(n-i+2)-\prod\limits_{i=1}^{p}(n-1)\right]$$
+\begin{center}
+$b_1=\frac{1}{(n-1)^p}\prod\limits_{j=1}^{p}(n-j)$
 
+$b_2=\frac{1}{(n-1)^{2p}}\prod\limits_{j=1}^{p}(n-j)\left[\prod\limits_{i=1}^{p}(n-i+2)-\prod\limits_{i=1}^{p}(n-1)\right]$
+\end{center}
 Tenga en cuenta que n debe ser mayor que el número de características de calidad (p).
 
 Con frecuencia, $\Sigma$ se desconoce y se estima a través de $\Sigma$ según la relación:
 $$|S|=b_1|\Sigma|$$
 Por lo tanto, los parámetros resultan en
-$$UCL=\frac{S}{b_1}(b_1 + 3b_2^{1/2})$$
-$$CL=|S|$$
-$$LCL=max\left\lbrace\frac{|S|}{b_1}(b_1 -3b_2^{1/2}), 0\right\rbrace$$
+\begin{center}
+$UCL=\frac{S}{b_1}(b_1 + 3b_2^{1/2})\;\;\;\;\; ;$
+$\;\;\;\;\; CL=|S|\;\;\;\;\; ;$
+$\;\;\;\;\; LCL=max\left\lbrace\frac{|S|}{b_1}(b_1 -3b_2^{1/2}), 0\right\rbrace$
+\end{center}
 
 Teniendo en cuenta que S es una matriz positiva definida, el LCL carece de sentido para los valores negativos.
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.3]{FigurasUV/GVG.pdf}
+  \includegraphics[scale=0.4]{FigurasUV/GVG.pdf}
   \caption{Ejemplo gráfico de control de varianza generalizada}
 \end{figure}
 \pagebreak
@@ -157,7 +166,7 @@ Donde $\mu_1$ es el vector de medias para la fase II. Note que cuando $\lambda=1
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.3]{FigurasUV/MEWMA.pdf}
+  \includegraphics[scale=0.4]{FigurasUV/MEWMA.pdf}
   \caption{Ejemplo gráfico de control multivariante de promedios ponderados exponencialmente MEWMA}
 \end{figure}
 \pagebreak
@@ -202,18 +211,87 @@ n_{i-1}+1 \;\;\;\;\; si \;\;\;\;\;  T^2_{i-1}>0 \\
 \end{equation*}
 $$UCL=h$$
 
+\pagebreak
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.3]{FigurasUV/MCUSUM.pdf}
+  \includegraphics[scale=0.4]{FigurasUV/MCUSUM.pdf}
   \caption{Ejemplo gráficos de control MCUSUM}
 \end{figure}
 
 \section{Caso ilustrativo: Control de pitcheo}
-En este caso de ilustrativo, la aplicación de los gráficos de control multivariados se introducen en el béisbol, específicamente sobre el desempeño del lanzador. Si bien los lanzadores mueven la pelota estratégicamente en diferentes posiciones de la zona de ataque intentando que el bateador no haga contacto con ella, a menudo el desempeño del lanzador se mide por la habilidad para poner la bola en la zona de golpe a alta velocidad.
+En este caso ilustrativo, la aplicación de los gráficos de control multivariados se introducen en el béisbol utilizando el software \cite{R}, específicamente sobre el desempeño del lanzador. Si bien los lanzadores mueven la pelota estratégicamente en diferentes posiciones de la zona de ataque intentando que el bateador no haga contacto con ella, a menudo el desempeño del lanzador se mide por la habilidad para poner la bola en la zona de golpe a alta velocidad.
 
-En este caso, utilizamos los datos recopilados por los registros de lanzadores en la base de datos (MLB) (http://gd2.mlb.com/components/game/mlb/) para el lanzador C.C. Sabathia de los New York Yankees. Se seleccionaron dos conjuntos de datos de los juegos contra Tampa Bay: el primero el 10 de julio de 2011 y el 12 de agosto de 2011 el segundo. Ambos se almacenan en el paquete como sabathia1 y sabathia2 respectivamente. Los registros del lanzador brindan mucha información sobre cada lanzamiento, pero en nuestro estudio trabajamos con la velocidad de inicio (dada en mph) del lanzamiento y la ubicación (en pies) cuando cruza la casa. Este último punto se mide con respecto a un sistema de coordenadas en el que el origen se encuentra en el punto de la placa base. El eje z es el orientado verticalmente mientras que el eje x orientado horizontalmente a la derecha del receptor. Solo se consideran los lanzamientos de bola rápida y cada muestra es un bateador promediando todas las variables de lanzamiento. Observa que un jugador bate varias veces en la jugada.
+En este caso, utilizamos los datos recopilados por los registros de lanzadores en la base de datos (MLB) (http://gd2.mlb.com/components/game/mlb/) para el lanzador C.C. Sabathia de los New York Yankees. Se seleccionaron dos conjuntos de datos de los juegos contra Tampa Bay: el primero el 10 de julio de 2011 y el 12 de agosto de 2011 el segundo. Ambos se almacenan en el paquete \cite{R1} como sabathia1 y sabathia2 respectivamente. Los registros del lanzador brindan mucha información sobre cada lanzamiento, pero en nuestro estudio trabajamos con la velocidad de inicio (dada en mph) del lanzamiento y la ubicación (en pies) cuando cruza la casa. Este último punto se mide con respecto a un sistema de coordenadas en el que el origen se encuentra en el punto de la placa base. El eje z es el orientado verticalmente mientras que el eje x orientado horizontalmente a la derecha del receptor. Solo se consideran los lanzamientos de bola rápida y cada muestra es un bateador promediando todas las variables de lanzamiento. Observa que un jugador bate varias veces en la jugada.
+
+El vector de medias, la matriz de varianzas y covarianzas y la matriz de correlaciones son:
+\begin{equation*} 
+\bar{x}=\begin{bmatrix} 
+0.1069565   \\ 
+ 2.9430435  \\
+ 94.4108696  
+\end{bmatrix} \; ; \; 
+S=\begin{bmatrix} 
+0.22087668 & 0.09182787 & 0.05130731\\
+0.09182787 & 0.27479486 &-0.25359822\\
+0.05130731 & -0.25359822& 1.50752648
+\end{bmatrix} \; ; \;
+r=\begin{bmatrix}
+1.00000000 & 0.3727308 & 0.08891435 \\
+0.37273078 & 1.0000000 &-0.39401198 \\
+0.08891435 & -0.3940120&  1.00000000 \\
+\end{bmatrix}
+\end{equation*}
+
+Se puede realizar un análisis útil inicial mediante la construcción de un diagrama de dispersión tridimensional con un elipsoide de confianza.
+\pagebreak
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.5]{FigurasUV/ELIPSE.png}
+  \caption{Diagrama de dispersión tridimensional con confianza elipsoide}
+\end{figure}
+Al moverse a través de las coordenadas, se puede ver que todas las observaciones caen dentro de estos límites. No se detectan valores atípicos. Al realizar un gráfico de Hotelling, obtenemos
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.3]{FigurasUV/HTS1.pdf}
+  \caption{Gráfico de control $T^2$ de Hotelling para los datos de sabathia 1}
+\end{figure}
+
+Dado que no hay puntos fuera del UCL, no hay evidencia para rechazar el estado de control en el proceso. La puntuación final lo demuestra.
+
+Luego, Se utiliza este primer juego para analizar el segundo juego como Fase II u observaciones futuras, utilizando las estimaciones de Fase I del vector medio y la matriz de covarianza.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.38]{FigurasUV/HMS2.pdf}
+  \caption{Gráficos de control $T^2$ de Hotelling y MEWMA para los datos sabathia2}
+\end{figure}
+
+Para detectar cuál o cuáles variables originaron que el proceso se saliera de control, y poder corregir el problema, se utiliza un proceso denominado descomposición del estadístico $T^2$, la cual obtiene el estadístico $T^2$ y el $UCL$ con cada una de las variables individuales, luego con pares de variables para las posibles combinaciones y finalmente para las 3 variables. La variable o variables para las cuales el $T^2$ calculado supera el valor del $UCL$ calculado son las que originaron que el proceso se saliera de control. La descomposición del estadístico $T^2$ para los dos puntos(16 y 20) o muestras en los cuales el proceso se sale de control es:
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.6]{FigurasUV/DescT2.png}
+  \caption{Descomposición estadístico $T^2$ para detectar variables fuera de control}
+\end{figure}
+
+El análisis muestra los puntos 16 y 20 más allá de la UCL, es decir: el lanzador parece estar fuera de control. Teniendo en cuenta que las variables 1,2 y 3 son, respectivamente, eje horizontal, eje vertical y velocidad del lanzamiento, la descomposición de las estadísticas $T^2$ indica como en la muestra 16 ambas ubicaciones en los ejes horizontal y vertical (x) estaban fuera de control. En contraste, en el bateador número 20 solo la ubicación en la vertical causa la alarma.
+
+Con el fin de mejorar la detección rápida de pequeños cambios en el proceso, se calcularon los gráficos MEWMA y MCUSUM. Se puede observar, que el gráfico MEWMA de la figura 9 detecta los cambios en la media en el 10º bateador.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.4]{FigurasUV/MC1y2.pdf}
+  \caption{Gráfico de control CUSUM por Crosier 1988 y Pignatiello 1990 para los datos de sabathia2}
+\end{figure}
+
+El MCUSUM según (Crosier 1988) y (Pignatiello y Runger 1990) en los 9º y 10º bateadores respectivamente.
+
 \section{Conclusiones}
+Como conclusión general se tiene que los gráficos de control multivariantes son una herramienta muy útil y muy potente en el control estadístico de la calidad, permitiéndonos detectar cuando un proceso se sale de control con una alta precisión. Dentro de los gráficos mencionados, se vio que el gráfico de control $T^2$ de Hotelling tiene un buen desempeño en la detección de grandes cambios en la media, sin embargo, se queda corto ante cambios pequeños que presente el proceso; por ello se utilizan también los gráficos MEWMA y MCUSUM los cuales mejorar la detección rápida de pequeños cambios en el proceso, en el ejemplo aplicado se vio que estos últimos detectaban más rápido los cambios en el desempeño de los lanzamientos del jugador. 
 
+También se intuye que estos gráficos son análogos o se desprenden de los gráficos de control univariables, La gráfica $T^2$ y la de varianza generalizada es la contraparte multivariada de las gráficas Xbarra-R, Xbarra-S y I-MR .
+
+
+
+\nocite{LGCM,LGCM1}
     \bibliography{references}
 
 

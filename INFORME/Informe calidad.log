@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  19 JUL 2019 21:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  26 JUL 2019 16:56
 entering extended mode
 **"./Informe calidad.tex"
 ("Informe calidad.tex"
@@ -408,15 +408,15 @@ Package caption Info: End \AtBeginDocument code.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
-* h-part:(L,W,R)=(73.71613pt, 430.00462pt, 110.57425pt)
-* v-part:(T,H,B)=(85.35826pt, 624.25346pt, 85.35826pt)
+* h-part:(L,W,R)=(85.35826pt, 443.57848pt, 85.35826pt)
+* v-part:(T,H,B)=(42.67912pt, 709.61174pt, 42.67912pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=430.00462pt
-* \textheight=624.25346pt
-* \oddsidemargin=1.44614pt
-* \evensidemargin=38.30426pt
-* \topmargin=-15.98337pt
+* \textwidth=443.57848pt
+* \textheight=709.61174pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-58.6625pt
 * \headheight=12.0pt
 * \headsep=17.07164pt
 * \topskip=10.0pt
@@ -457,100 +457,140 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
- [2]
-<FigurasUV/GC.pdf, id=27, 1027.84pt x 545.03625pt>
+<FigurasUV/GC.pdf, id=18, 1027.84pt x 545.03625pt>
 File: FigurasUV/GC.pdf Graphic file (type pdf)
 <use FigurasUV/GC.pdf>
-Package pdftex.def Info: FigurasUV/GC.pdf  used on input line 78.
-(pdftex.def)             Requested size: 308.35437pt x 163.51213pt.
-<FigurasUV/GChi2.pdf, id=28, 1027.84pt x 545.03625pt>
+Package pdftex.def Info: FigurasUV/GC.pdf  used on input line 81.
+(pdftex.def)             Requested size: 411.12872pt x 218.01064pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 5970) has occurred while \output is active []
+
+ [2]
+<FigurasUV/GChi2.pdf, id=30, 1027.84pt x 545.03625pt>
 File: FigurasUV/GChi2.pdf Graphic file (type pdf)
 <use FigurasUV/GChi2.pdf>
-Package pdftex.def Info: FigurasUV/GChi2.pdf  used on input line 89.
-(pdftex.def)             Requested size: 308.35437pt x 163.51213pt.
- [3 <./FigurasUV/GC.pdf> <./FigurasUV/GChi2.pdf>]
+Package pdftex.def Info: FigurasUV/GChi2.pdf  used on input line 92.
+(pdftex.def)             Requested size: 411.12872pt x 218.01064pt.
+
+[3 <./FigurasUV/GC.pdf> <./FigurasUV/GChi2.pdf>]
 <FigurasUV/GT2.pdf, id=45, 1027.84pt x 545.03625pt>
 File: FigurasUV/GT2.pdf Graphic file (type pdf)
 <use FigurasUV/GT2.pdf>
-Package pdftex.def Info: FigurasUV/GT2.pdf  used on input line 110.
-(pdftex.def)             Requested size: 308.35437pt x 163.51213pt.
+Package pdftex.def Info: FigurasUV/GT2.pdf  used on input line 113.
+(pdftex.def)             Requested size: 411.12872pt x 218.01064pt.
  [4 <./FigurasUV/GT2.pdf>]
 <FigurasUV/GVG.pdf, id=54, 1027.84pt x 545.03625pt>
 File: FigurasUV/GVG.pdf Graphic file (type pdf)
 <use FigurasUV/GVG.pdf>
-Package pdftex.def Info: FigurasUV/GVG.pdf  used on input line 138.
-(pdftex.def)             Requested size: 308.35437pt x 163.51213pt.
+Package pdftex.def Info: FigurasUV/GVG.pdf  used on input line 147.
+(pdftex.def)             Requested size: 411.12872pt x 218.01064pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[5]
-<FigurasUV/MEWMA.pdf, id=58, 1027.84pt x 545.03625pt>
-File: FigurasUV/MEWMA.pdf Graphic file (type pdf)
-<use FigurasUV/MEWMA.pdf>
-Package pdftex.def Info: FigurasUV/MEWMA.pdf  used on input line 160.
-(pdftex.def)             Requested size: 308.35437pt x 163.51213pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[6 <./FigurasUV/GVG.pdf>]
-Overfull \hbox (11.94667pt too wide) in paragraph at lines 183--184
-[]\T1/cmr/m/n/10 Pignatiello y Runger tam-bién pro-pusieron dos grá-fi-cos, el 
-sigu-iente es el que tuvo mejor rendimiento: 
+[5 <./FigurasUV/GVG.pdf>]
+Overfull \hbox (27.94922pt too wide) in paragraph at lines 151--151
+[]\T1/cmr/bx/n/12 Gráfico mul-ti-vari-ante de prome-dios pon-der-a-dos ex-po-ne
+n-cial-mente MEWMA 
  []
 
-[7 <./FigurasUV/MEWMA.pdf>]
-<FigurasUV/MCUSUM.pdf, id=78, 1027.84pt x 545.03625pt>
+<FigurasUV/MEWMA.pdf, id=66, 1027.84pt x 545.03625pt>
+File: FigurasUV/MEWMA.pdf Graphic file (type pdf)
+<use FigurasUV/MEWMA.pdf>
+Package pdftex.def Info: FigurasUV/MEWMA.pdf  used on input line 169.
+(pdftex.def)             Requested size: 411.12872pt x 218.01064pt.
+
+Underfull \vbox (badness 2617) has occurred while \output is active []
+
+ [6 <./FigurasUV/MEWMA.pdf>]
+Underfull \vbox (badness 1048) has occurred while \output is active []
+
+ [7]
+<FigurasUV/MCUSUM.pdf, id=79, 1027.84pt x 545.03625pt>
 File: FigurasUV/MCUSUM.pdf Graphic file (type pdf)
 <use FigurasUV/MCUSUM.pdf>
-Package pdftex.def Info: FigurasUV/MCUSUM.pdf  used on input line 207.
+Package pdftex.def Info: FigurasUV/MCUSUM.pdf  used on input line 217.
+(pdftex.def)             Requested size: 411.12872pt x 218.01064pt.
+
+Overfull \hbox (77.52394pt too wide) detected at line 243
+[] \OT1/cmr/m/n/10 = []  ;  \OML/cmm/m/it/10 S \OT1/cmr/m/n/10 = []  ;  \OML/cm
+m/m/it/10 r \OT1/cmr/m/n/10 = []
+ []
+
+<FigurasUV/ELIPSE.png, id=80, 359.84438pt x 321.45094pt>
+File: FigurasUV/ELIPSE.png Graphic file (type png)
+<use FigurasUV/ELIPSE.png>
+Package pdftex.def Info: FigurasUV/ELIPSE.png  used on input line 249.
+(pdftex.def)             Requested size: 179.92174pt x 160.72507pt.
+<FigurasUV/HTS1.pdf, id=82, 1027.84pt x 545.03625pt>
+File: FigurasUV/HTS1.pdf Graphic file (type pdf)
+<use FigurasUV/HTS1.pdf>
+Package pdftex.def Info: FigurasUV/HTS1.pdf  used on input line 255.
 (pdftex.def)             Requested size: 308.35437pt x 163.51213pt.
- [8 <./FigurasUV/MCUSUM.pdf>] ("Informe calidad.bbl") [9] ("Informe calidad.aux
-")
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- ) 
+ [8 <./FigurasUV/MCUSUM.pdf>]
+<FigurasUV/HMS2.pdf, id=91, 1027.84pt x 545.03625pt>
+File: FigurasUV/HMS2.pdf Graphic file (type pdf)
+<use FigurasUV/HMS2.pdf>
+Package pdftex.def Info: FigurasUV/HMS2.pdf  used on input line 264.
+(pdftex.def)             Requested size: 390.58325pt x 207.11592pt.
+<FigurasUV/DescT2.png, id=92, 422.32782pt x 167.12437pt>
+File: FigurasUV/DescT2.png Graphic file (type png)
+<use FigurasUV/DescT2.png>
+Package pdftex.def Info: FigurasUV/DescT2.png  used on input line 271.
+(pdftex.def)             Requested size: 253.39864pt x 100.27538pt.
+ [9 <./FigurasUV/ELIPSE.png> <./FigurasUV/HTS1.pdf> <./FigurasUV/HMS2.pdf>]
+<FigurasUV/MC1y2.pdf, id=107, 1027.84pt x 545.03625pt>
+File: FigurasUV/MC1y2.pdf Graphic file (type pdf)
+<use FigurasUV/MC1y2.pdf>
+Package pdftex.def Info: FigurasUV/MC1y2.pdf  used on input line 281.
+(pdftex.def)             Requested size: 411.12872pt x 218.01064pt.
+ [10 <./FigurasUV/DescT2.png> <./FigurasUV/MC1y2.pdf>]
+("Informe calidad.bbl") [11] ("Informe calidad.aux") ) 
 Here is how much of TeX's memory you used:
- 5634 strings out of 492946
- 80212 string characters out of 3135510
- 166288 words of memory out of 3000000
- 9385 multiletter control sequences out of 15000+200000
+ 5677 strings out of 492946
+ 80987 string characters out of 3135510
+ 166504 words of memory out of 3000000
+ 9422 multiletter control sequences out of 15000+200000
  24127 words of font info for 69 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,10n,40p,1267b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/d
-pi600\ecti1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfo
-ur/jknappen/ec/dpi600\eccc0900.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2
-.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0900.pk> <C:\Users\KEVINSTEVEN\AppDat
-a\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\KE
-VINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.
-pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/
-dpi600\ecrm0600.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljf
-our/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\
-2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\KEVINSTEVEN\AppDa
-ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc0800.pk> <C:\Users\K
-EVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700
-.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec
-/dpi600\eccc1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/lj
-four/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX
-\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\KEVINSTEVEN\AppD
-ata\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on "Informe calidad.pdf" (9 pages, 288032 bytes).
+ <C:\Users\KEVINSTEVEN\Ap
+pData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\User
+s\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc0
+900.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen
+/ec/dpi600\ecti0900.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk
+/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiK
+TeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\KEVINSTEVEN\A
+ppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Use
+rs\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx
+1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappe
+n/ec/dpi600\ecrm1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/p
+k/ljfour/jknappen/ec/dpi600\eccc0800.pk> <C:\Users\KEVINSTEVEN\AppData\Local\Mi
+KTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\KEVINSTEVEN\
+AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1000.pk> <C:\Us
+ers\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecb
+x1440.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknapp
+en/ec/dpi600\ecrm0900.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/
+pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+mi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.p
+fb>
+Output written on "Informe calidad.pdf" (11 pages, 388296 bytes).
 PDF statistics:
- 568 PDF objects out of 1000 (max. 8388607)
+ 619 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

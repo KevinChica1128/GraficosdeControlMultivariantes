@@ -61,8 +61,9 @@ mult.chart(type="mewma", carbon1)
 
 #Gráficos MCUSUM
 data("carbon2")
-Xmv <- mult.chart(carbon1, type = "t2") $Xmv
-S <- mult.chart(carbon1, type = "t2") $covariance
+x11()
+Xmv <- mult.chart(carbon1, type = "t2")$Xmv
+S <- mult.chart(carbon1, type = "t2")$covariance
 x11()
 par(mfrow=c(1,2))
 mult.chart(type = "mcusum", carbon2, Xmv = Xmv, S = S)
@@ -84,6 +85,7 @@ plot3d(ellipse3d(cov(sabathia1), centre = colMeans(sabathia1), level = 0.99),
 points3d(sabathia1, size = 4, cex = 2, add = TRUE)
 
 #Gráfico T2 de Hotelling
+x11()
 mult.chart(type = "t2", sabathia1)
 
 colm <- nrow(sabathia1)
@@ -92,7 +94,14 @@ mat <- (mult.chart(sabathia1,type = "t2")$covariance)
 
 #Se cargan otros datos
 data("sabathia2")
+#Gráficos T2 de Hotelling y mewma para los datos Sabathia2
+x11()
 par(mfrow = c(1,2))
 mult.chart(type = "t2", sabathia2, Xmv = vec, S = mat, colm = colm)
-
+mult.chart(type = "mewma",sabathia2, Xmv = vec, S = mat, colm = colm)
+# Gráficos MCUSUM by Crosier y by Pignatiello
+x11()
+par(mfrow = c(1,2))
+mult.chart(type = "mcusum", sabathia2, Xmv = vec, S = mat, colm = colm)
+mult.chart(type = "mcusum2",sabathia2, Xmv = vec, S = mat, colm = colm)
 
