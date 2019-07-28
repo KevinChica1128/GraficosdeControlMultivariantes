@@ -1,0 +1,43 @@
+\begin{thebibliography}{1}
+
+\bibitem{LGCM1}
+Theodore~T. Allen.
+\newblock {\em Introduction to Engineering Statistics and Six Sigma}.
+\newblock 2006.
+
+\bibitem{A3}
+Rub\'{e}n Dar\'{i}o~Loaiza Arbel\'{a}ez.
+\newblock Gr\'{a}ficos de control no param\'{e}tricos basados en r
+  estad\'{i}sticos con aplicaci\'{o}n al caso multivariante.
+\newblock 2013.
+
+\bibitem{LGCM}
+Edgar~Santos Fern\'{a}ndez.
+\newblock {\em Multivariate Statistical Quality Control Using R}.
+\newblock 2012.
+
+\bibitem{A1}
+Roberto Herrera, Karen Hern\'{a}ndez, Eliana Figueroa, and Jos\'{e}~De
+  \'{A}vila.
+\newblock Aplicaci\'{o}n del control estad\'{i}stico multivariado para medir la
+  acapacidad del proceso de fabricaci\'{o}n de resortes de compresi\'{o}n en
+  acero inoxidable.
+\newblock {\em Prospectiva}, 16(2):49--58, 2018.
+
+\bibitem{R}
+{R Core Team}.
+\newblock {\em R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria, 2019.
+
+\bibitem{A2}
+Miguel A.~Flores S\'{a}nchez.
+\newblock Desarrollo de una aplicaci\'{o}n para gr\'{a}ficos de control de
+  procesos industriales.
+\newblock Master's thesis, Universidad de la Coru\~{n}a, 2013.
+
+\bibitem{R1}
+Edgar Santos-Fern{\'a}ndez.
+\newblock {\em Multivariate Statistical Quality Control Using R}, volume~14.
+\newblock Springer, 2013.
+
+\end{thebibliography}

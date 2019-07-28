@@ -1,8 +1,6 @@
 \babel@toc {spanish}{}
 \beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{3}{0}{1}
 \beamer@sectionintoc {2}{Antecedentes}{4}{0}{2}
-\beamer@sectionintoc {3}{Descripci\IeC {\'o}n de la metodolog\IeC {\'\i }a}{5}{0}{3}
-\beamer@sectionintoc {4}{Caso ilustrativo}{6}{0}{4}
-\beamer@sectionintoc {5}{Conclusiones}{7}{0}{5}
-\beamer@sectionintoc {6}{Bibliograf\IeC {\'\i }a}{8}{0}{6}
-\beamer@sectionintoc {7}{Anexos}{9}{0}{7}
+\beamer@sectionintoc {3}{Descripci\IeC {\'o}n de la metodolog\IeC {\'\i }a}{6}{0}{3}
+\beamer@sectionintoc {4}{Caso ilustrativo: Control de Pitcheo}{25}{0}{4}
+\beamer@sectionintoc {5}{Conclusiones}{32}{0}{5}
